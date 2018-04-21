@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>complaint</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.form-style-3{
+    max-width: 95%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-3 label > span{
+    float: left;
+    width: 100px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px grey;
+    padding: 20px;
+    background:rgb(240,240,240);
+    box-shadow: inset 0px 0px 15px black;
+    -moz-box-shadow: inset 0px 0px 15px black;
+    -webkit-box-shadow: inset 0px 0px 15px black;
+}
+.form-style-3 fieldset legend{
+    color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: rgb(50,50,50);
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size:18px;
+}
+.form-style-3 textarea{
+    width:300px;
+    height:500px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px grey;
+    outline: none;
+    color: black;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px black;
+    -moz-box-shadow: inset 1px 1px 4px black;
+    -webkit-box-shadow: inset 1px 1px 4px black;
+    background:white;
+    width:35%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+    background: rgb(50,50,50);
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    color: #FFCBE2;
+    box-shadow: inset -1px -1px 3px black;
+    -moz-box-shadow: inset -1px -1px 3px black;
+    -webkit-box-shadow: inset -1px -1px 3px black;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;    
+    font-weight: bold;
+}
+.required{
+    color:red;
+    font-weight:normal;
+}
+.footer {
+ position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #b4b4b4;
+   color: white;
+   text-align: center;
+   }
+
+ a {
+    color: #000000;
+}
+
+  </style>
+</head>
+<body background="women background.jpg">
+<a href="front.html"><img src="helpline.jpg" style="width:210px;height:100px;"></a>
+<img src="my gov logo.png" style="width:300px;height:100px;">
+<a href="http://www.swachhbharaturban.in/sbm/home/#/SBM" target="_blank"><img src="swatch.jpg" align="right" style="width:250px;height:100px;" ></a>
+<img src="satyamev.jpg"width="80"height="100" align="right">
+
+<nav class="navbar navbar-inverse"> 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	  
+        <li><a href="front.html">HOME</a></li>
+        <li class="active"><a href="complain.html">COMPLAINT FORM</a></li>
+        <li><a href="status.html">COMPLAINT STATUS</a></li>
+		     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">LEGAL RIGHTS<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+           <li><a href="women welfare.html">WOMEN WELFARE ACTS</a></li>
+          <li><a href="women related.html">WOMEN-RELATED LEGISLATIONS</a></li>
+         
+        </ul>
+      </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="adminlogin.php"><span class="glyphicon glyphicon-log-in"></span>ADMIN LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<form action="form.php" method="POST">
+<h1 style="font-size:55px;text-align:center;font-family:Lucida Sans Unicode;">REGISTER YOUR COMPLAIN</h1>
+<div class="form-style-3">
+<form>
+  <fieldset><legend>Complainant details</legend>
+<label for="field1"><span>Full Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" required /></label>
+<label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" required /></label>
+<label for="field3"><span>Mobile no. <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" required /></label>
+<label for="field4"><span>Address <span class="required">*</span></span><input type="text" class="input-field" name="field4" value="" required /> <span>city <span class="required">*</span></span> <input type="text" class="input-field"name="field5" value="" required /></label>
+<label for="field6"><span>state<span class="required">*</span></span><input type="text" class="input-field" name="field6" value="" required /> <span>pincode <span class="required">*</span></span><input type="text" class="input-field" name="field7" value="" required /></label>
+<label for="field8"><span>Gender <span class="required">*</span></span><input type="text" class="input-field" name="field8" value="" required /></label>
+</fieldset>
+
+<fieldset><legend>Victim details</legend>
+<label for="field9"><span>Full Name <span class="required">*</span></span><input type="text" class="input-field" name="field9" value="" required  /></label>
+<label for="field10"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field10" value="" required  /></label>
+<label for="field11"><span>Mobile no. <span class="required">*</span></span><input type="text" class="input-field" name="field11" value="" required  /></label>
+<label for="field12"><span>Address <span class="required">*</span></span><input type="text" class="input-field" name="field12" value="" required  /> <span>city <span class="required">*</span></span> <input type="text" class="input-field"name="field13" value="" required /></label>
+<label for="field14"><span>state <span class="required">*</span></span><input type="text" class="input-field" name="field14" value="" required /> <span>pincode <span class="required">*</span></span><input type="text" class="input-field" name="field15" value="" required  /></label>
+<label for="field16"><span>Age<span class="required">*</span></span><input type="text" class="input-field" name="field16" value="" required /></label>
+<label for="field17"><span>Gender <span class="required">*</span></span><input type="text" class="input-field" name="field17" value="female" disabled /></label>
+</fieldset>
+<fieldset><legend>Complain Against</legend>
+<label for="field18"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field18" value="" required /></label>
+<label for="field19"><span>Address </span><input type="text" class="input-field" name="field19" value="" required /></label>
+<label for="field20"><span>Mobile no. </span></span><input type="number" class="input-field" name="field20" value="" /></label>
+<label for="field21"><span>Gender <span class="required">*</span></span><input type="text" class="input-field" name="field21" value="" /></label>
+</fieldset>
+<fieldset><legend>Complain details</legend>
+<label for="field22"><span>Department <span class="required">*</span></span><select name="field22" class="select-field">
+<option value="murder">murder</option>
+<option value="rape">rape</option>
+<option value="eve teasing"> eve teasing</option>
+<option value="harresment"> harresment</option>
+<option value="trafficking"> trafficking</option>
+<option value="violence"> violence</option>
+<option value="stalking">stalking </option>
+<option value="eve teasing"> eve teasing</option>
+<option value="legal custody of child"> legal custody of child</option>
+<option value="child marriage"> child marriage</option>
+<option value="gender discrimination">gender discrimination</option>
+<option value="dowry"> dowry</option>
+<option value="others"> others</option>
+
+</select></label>
+<label for="field23"><span>Complaint<span class="required">*</span></span><textarea name="field23" class="textarea-field"></textarea></label>
+<label><span>&nbsp;</span><input type="submit" value="Register" /></label>
+</fieldset>
+</form>
+</div>
+<div class="footer">
+<div class="container clearfix">
+<ul class="footer-menu">
+
+<p><a = href="file:///C:/xampp/htdocs/women/About%20us.html">About Us</a></p>
+<p><a href="file:///C:/xampp/htdocs/women/Feedback.html">Feedback</a></p>
+<p><a href="file:///C:/xampp/htdocs/women/FAQ's.html">FAQ</a></p>
+<p><a href="file:///C:/xampp/htdocs/women/Terms%20and%20Conditions.html">Terms and Conditions</a></p>
+
+
+</ul>
+</div>
+<div class="footer-main">
+
+      <p><font color="#000000">© Content owned, updated and maintained by the MyGov Cell. MyGov platform is designed, developed and hosted by National Informatics Centre, Ministry of Electronics & Information Technology, Government of India.</font></p>
+
+</div></div>
+
+
+
+</body>
+</html>
